@@ -1,0 +1,55 @@
+
+$colorblue:#007bff;
+$colorwhite: #fff;
+.rdt_TableCol {
+    font-size: 16px;
+    color: $colorblue;
+    font-weight: 700;
+}
+.rdt_TableRow{
+    font-size: 16px;
+    .emailer{
+        color: $colorblue;
+    }
+}
+.rdt_Pagination{
+    justify-content: flex-start;
+    .kAKLbp{
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+}
+.rdl-control{
+    padding: 0;
+    option {
+        padding: 10px;
+        font-size: 16px;
+        &:nth-child(odd){
+            background: #f2f6f8;
+        }
+    }
+}
+.rdl-actions{
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 16px;
+        &:hover{
+            background: $colorblue !important;
+            color: $colorwhite;
+        }
+    }
+    .rdl-move-all{
+        display: none;
+    }
+}
+.rdl-filter{
+    position: relative;
+    &:after{
+        position: absolute;
+        content: "\f002";
+        font-family: "Font Awesome 5 Brands"; 
+        font-weight: 900; 
+    }
+}
